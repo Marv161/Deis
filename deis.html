@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝕯𝖊𝖎s - Oficial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            /* Fondo principal con el primer GIF */
+            background-image: url('https://i.ibb.co/CKC4f5fs/deis1.gif');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            overflow-x: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #000;
+        }
+
+        /* Contenedor con solo borde */
+        .border-box {
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            padding: 3rem;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-width: 90%;
+            width: 500px;
+            backdrop-filter: blur(2px); /* Un desenfoque muy leve para separar del fondo */
+        }
+
+        /* Texto con gradiente y efecto wave */
+        .gothic-text {
+            font-size: 5rem;
+            font-weight: bold;
+            text-transform: none;
+            background-image: linear-gradient(-45deg, rgb(95, 0, 124) 3%, rgb(167, 0, 62) 18.6667%, rgb(239, 0, 0) 34.3333%, rgb(95, 0, 124) 50%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradientWave 3s linear infinite;
+            /* Efecto Glow */
+            filter: drop-shadow(0 0 15px rgba(239, 0, 0, 0.6));
+        }
+
+        @keyframes gradientWave {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 200% 50%; }
+        }
+
+        /* Estilo para el GIF secundario */
+        .secondary-gif {
+            margin-top: 20px;
+            max-width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Ajuste para móviles */
+        @media (max-width: 640px) {
+            .gothic-text {
+                font-size: 3.5rem;
+            }
+            .border-box {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="border-box">
+        <!-- Texto con gradiente animado -->
+        <h1 class="gothic-text">𝕯𝖊𝖎s</h1>
+        
+        <!-- Imagen GIF secundaria -->
+        <img src="https://i.ibb.co/Fq5DYgZW/deis2.gif" alt="Deis Animation" class="secondary-gif">
+    </div>
+
+</body>
+</html>
